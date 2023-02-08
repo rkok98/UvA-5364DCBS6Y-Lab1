@@ -115,7 +115,6 @@ components:
           items:
             $ref: '#/components/schemas/GradeRecord'
       required:
-        - student_id
         - first_name
         - last_name
       example:
