@@ -114,14 +114,18 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/GradeRecord'
+      required:
+        - student_id
+        - first_name
+        - last_name
       example:
         student_id: 0
         last_name: last_name
         first_name: first_name
         gradeRecords:
-        - grade: 6.0274563
+        - grade: 6.5
           subject_name: subject_name
-        - grade: 6.0274563
+        - grade: 6.5
           subject_name: subject_name
     GradeRecord:
       type: object
@@ -134,8 +138,11 @@ components:
           type: number
           format: float
       example:
-        grade: 6.0274563
+        grade: 6.5
         subject_name: subject_name
+      required:
+        - grade
+        - subject_name
     inline_response_200:
       type: object
       properties:
