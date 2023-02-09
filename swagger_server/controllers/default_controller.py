@@ -2,7 +2,7 @@ import connexion
 
 from swagger_server.models.inline_response200 import InlineResponse200  # noqa: E501
 from swagger_server.models.student import Student  # noqa: E501
-from swagger_server.service.student_service import *
+from swagger_server.service.student_mongodb_service import *
 
 
 def add_student(body=None):  # noqa: E501
